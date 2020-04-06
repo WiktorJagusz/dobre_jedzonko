@@ -1,0 +1,29 @@
+// CDN FONTAWESOME
+// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+//
+// Sass:
+// https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+
+
+body{
+    background-color: #BADA55;
+}
+
+
+@import 'generic/reset';
+
+@import 'settings/colors';
+@import 'settings/fonts';
+
+@import 'elements/base';
+@import 'elements/header';
+@import 'elements/callToAction';
+@import 'elements/carousel';
+@import 'elements/features';
+@import 'elements/newsletter';
+@import 'elements/about';
+@import 'elements/footer';
+@import 'elements/app';
+@import 'elements/recipes';
+@import 'elements/features';
+@import 'elements/appelements/modalIngredient';

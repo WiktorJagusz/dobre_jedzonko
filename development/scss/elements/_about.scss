@@ -1,0 +1,32 @@
+#about {
+    background-color: $screen-color;
+    .site_container{
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    .kucharka {
+        padding: 20px;
+        margin: 40px 20px;
+        img {
+            height: 300px;
+            width: 300px;
+        }
+    }
+    .aboutdiv {
+        font-family: $font-primary;
+        color: $header-color;
+        padding: 20px;
+        margin: 40px 20px;
+        width: 600px;
+        max-height: 400px;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        margin-top: 20px;
+        font-size: 1.2rem;
+        line-height: 22px;
+    }
+}

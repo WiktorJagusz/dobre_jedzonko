@@ -1,0 +1,36 @@
+header {
+  background-color: $header-color;
+
+  h1 {
+    font-family: $logo-font;
+    font-size: 2.5rem;
+    color: $screen-color;
+  }
+
+  .site_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+
+  li {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 20px;
+
+    a {
+      text-decoration: none;
+      color: $screen-color;
+      &:hover,
+      &:active {
+        color: $buttons-color;
+      }
+    }
+}
+
+}
+.jedzonko {
+  color: $buttons-color;
+  font-weight: bold;
+}

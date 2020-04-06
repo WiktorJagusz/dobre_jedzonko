@@ -1,0 +1,99 @@
+footer {
+  background-color: $side-panel;
+
+  .site_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25vh;
+    color: white;
+    box-sizing: content-box;
+
+    h1 {
+      display: block;
+      color: white;
+      font-size: 1.8rem;
+
+    }
+
+    [class*=block] {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 25px 0;
+      line-height: 1.27rem;
+    }
+  }
+
+  .block-1 {
+    p {
+      width: 260px;
+    }
+  }
+
+  .block-2 {
+
+    ul {
+      list-style: disc;
+      line-height: 1.6rem;
+    }
+  }
+
+  .block-3 {
+
+    .input-row-flex {
+      display: flex;
+
+      button {
+        background-color: $buttons-color;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+
+      input {
+        height: 1.8rem;
+      }
+    }
+
+
+    .icons {
+      display: flex;
+      justify-content: flex-start;
+      width: 180px;
+
+      i {
+        font-size: 1.8rem;
+        padding-right: 40px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+
+  .copyright {
+    height: 40px;
+    background-color: $header-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      opacity: .85;
+      color: white;
+    }
+
+    a {
+      text-decoration: none;
+      color: $buttons-color;
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,38 @@
+.newsletter {
+    background-color: $header-color;
+
+    .site_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+      }
+
+      h3 {
+        font-family: $font-primary;
+        font-size: 2.7rem;
+        color: $screen-color;
+      }
+
+      form {
+          display: flex;
+      }
+
+      input[type=text] {
+          height: 3rem;
+          width: 300px;
+          font-size: 2rem;
+          color: $header-color;
+      }
+
+      input[type=submit] {
+        height: 3rem;
+        width: 6rem;
+        background-color: $buttons-color;
+        border: none;
+        color: $screen-color;
+        font-family: $font-primary;
+        font-weight: bold;
+      }
+}
+

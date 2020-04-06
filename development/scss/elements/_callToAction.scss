@@ -1,0 +1,43 @@
+.callToAction {
+  background-color: $header-color;
+
+  .site_container {
+    color: white;
+    display: flex;
+    height: 37.8vh;
+    justify-content: space-around;
+
+
+    .flexBoxLeft {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      h3 {
+        font-size: 1.8rem;
+      }
+
+      p {
+        line-height: 1.5em;
+        width: 700px;
+      }
+    }
+
+    .flexBoxRight {
+      display: flex;
+      align-items: center;
+
+      button {
+        background-color: $buttons-color;
+        color: white;
+        border: none;
+        height: 60px;
+        width: 200px;
+        cursor: pointer;
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+

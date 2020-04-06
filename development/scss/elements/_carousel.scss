@@ -1,0 +1,54 @@
+.carousel {
+  background-color: $screen-color;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $font-primary;
+  color: #000;
+  h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 32px;
+  }
+  button {
+    width: 20px;
+    height: 20px;
+    border: solid #000;
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+}
+
+button.prevSlide {
+  transform: rotate(135deg);
+  margin-left: 50px;
+  
+}
+
+button.nextSlide {
+  transform: rotate(-45deg);
+  margin-right: 50px;
+}
+
+.slider {
+  width: 825px;
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: none;
+    text-align: center;
+  }
+
+  .visible {
+    display: inline-block;
+  }
+}
+

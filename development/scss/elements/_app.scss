@@ -1,0 +1,300 @@
+.app {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top {
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $header-color;
+  }
+
+  h1 {
+    font-family: $logo-font;
+    font-size: 2.5rem;
+    color: $screen-color;
+    margin-left: 20px;
+  }
+}
+
+.jedzonko {
+  color: $buttons-color;
+  font-weight: bold;
+}
+
+.user {
+  color: $screen-color;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+
+  i {
+    padding: 10px;
+    color: $buttons-color;
+    margin-right: 10px;
+  }
+}
+
+.middle {
+  display: flex;
+}
+
+.leftMenu {
+  background-color: $side-panel;
+  height: 100vh;
+  display: flex;
+  width: 20%;
+  flex-direction: column;
+  font-size: 1.5rem;
+
+  .active {
+    font-weight: bold;
+    &:before {
+      position: absolute;
+      left: 0;
+      height: 70px;
+      width: 5px;
+      background-color: $buttons-color;
+      content: "";
+    }
+
+    &:after {
+      position: absolute;
+      right: 5%;
+      color: $buttons-color;
+      font-size: 1.5rem;
+      content: ">";
+    }
+
+  }
+
+  a {
+    text-decoration: none;
+    color: $screen-color;
+    &:hover {
+      color: $screen-color;
+    }
+  }
+
+  li {
+    display: flex;
+    padding-left: 20px;
+    height: 70px;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+
+    
+
+    &:hover,
+    &:active {
+      font-weight: bold;
+      &:before {
+        position: absolute;
+        left: 0;
+        height: 70px;
+        width: 5px;
+        background-color: $buttons-color;
+        content: "";
+      }
+
+      &:after {
+        position: absolute;
+        right: 5%;
+        color: $buttons-color;
+        font-size: 1.5rem;
+        content: ">";
+      }
+    }
+  }
+}
+
+.content {
+  background-image: url(../images/image.png);
+  height: 100vh;
+  width: 80%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  .pulpitTop {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 30vh;
+
+    i {
+      font-size: 6rem;
+      padding: 30px;
+    }
+
+    .addRecipe,
+    .addSchedule {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: $screen-color;
+      width: 20%;
+      border: 2px dashed #468966;
+      color: #468966;
+      font-size: 2rem;
+      font-weight: bold;
+      padding-bottom: 30px;
+      margin: 20px;
+
+      i {
+
+        font-size: 6rem;
+      }
+    }
+
+    .widgets {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 60%;
+      margin: 20px;
+
+      i {
+        font-size: 3rem;
+        padding: 0 10px 0 10px;
+       }
+
+
+      [class*="widget"] {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 10px;
+        height: 30%;
+        background-color: $screen-color;
+        font-size: 1.3rem;
+        font-weight: bold;
+
+        .fa-window-close {
+          font-size: 1rem;
+          align-self: flex-start;
+          padding-top: 5px;
+        }
+
+        div {
+          display: flex;
+          align-items: center;
+        }
+
+        
+      }
+
+      .widget1 {
+        border: 2px dashed #3498db;
+        color: #3498db;
+      }
+
+      .widget2 {
+        border: 2px dashed #ffb03b;
+        color: #ffb03b;
+      }
+
+      .widget3 {
+        border: 2px dashed #468966;
+        color: #468966;
+      }
+    }
+  }
+}
+
+// Feature 2.2 
+.welcome {
+  top: 20px;
+  left: 40px;
+  position: absolute;
+  visibility: visible;
+  border: 1px $side-panel dashed;
+  height: 95%;
+  width: 95%;
+  background-color: $screen-color;
+  font-family: $font-primary;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+  text-align: center;
+  color: $header-color;
+  h1 {
+    color: $header-color;
+    font-size: 3rem;
+    font-family: $font-primary;
+    margin-top: 100px;
+  }
+  span {
+    margin: 20px;
+  }
+  span:first-of-type {
+    font-size: 1.5rem;
+    width: 400px;
+  }
+  span:last-of-type {
+    font-size: 1.7rem;
+    width: 550px;
+  }
+}
+input {
+  height: 40px;
+  width: 250px;
+  font-size: 1rem;
+}
+.btn-get-name {
+  background-color: $buttons-color;
+  color: white;
+  font-size: 24px;
+  height: 40px;
+  width: 150px;
+  margin: 20px;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// Feature 3.3
+.content{
+  flex-wrap: wrap;
+}
+
+.weekendDiv{
+  background: white;
+  height: 60%;
+  width: 90%;
+  table {
+    line-height: 70px;
+    margin: 0 40px 40px 40px;
+    height: 90%;
+    width: 95%;
+    color: $side-panel;
+    font-size: 20px;
+    td, th {
+      border-bottom: 1px solid $side-panel;
+    }
+    .weekendDays{
+      font-weight: bold;
+      color: $header-color;
+      font-size: 2rem;
+    }
+    th {
+      font-size: 1.5rem;
+      padding-top: 20px;
+      font-weight: bold;
+      color: $buttons-color;
+      text-align: center;
+    }
+  }
+}
